@@ -9,7 +9,7 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    private var collectionView = MaincollectionView(count: 20)
+    private var collectionView = MainCollectionView(count: 20)
     
     private let emojiArray = ["💪", "🏆", "😎", "😈", "💥", "🧡", "👺", "🥰", "😙", "☺️"]
     

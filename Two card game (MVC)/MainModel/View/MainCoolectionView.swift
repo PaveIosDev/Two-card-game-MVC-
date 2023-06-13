@@ -11,7 +11,7 @@ protocol MainCollectionViewProtocol: AnyObject {
     func selectItem(indexPath: IndexPath)
 }
 
-class MaincollectionView: UICollectionView {
+class MainCollectionView: UICollectionView {
     
     var count = 0
     
@@ -42,7 +42,7 @@ class MaincollectionView: UICollectionView {
 
 //MARK: - UICollectionViewDataSource
 
-extension MaincollectionView: UICollectionViewDataSource {
+extension MainCollectionView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         count
     }
@@ -58,15 +58,15 @@ extension MaincollectionView: UICollectionViewDataSource {
 
 //MARK: - UICollectionViewDelegate
 
-extension MaincollectionView: UICollectionViewDelegate {
+extension MainCollectionView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         cellDelegate?.selectItem(indexPath: indexPath)
     }
 }
 
-extension MaincollectionView: UICollectionViewDelegateFlowLayout {
+extension MainCollectionView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: collectionView.frame.width / 4.4,
-               height: collectionView.frame.height / 4.4)
+               height: collectionView.frame.width / 4.4)
     }
 }

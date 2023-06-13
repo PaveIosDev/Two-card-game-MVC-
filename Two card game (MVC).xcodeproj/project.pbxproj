@@ -14,6 +14,8 @@
 		C47429742A38C1DC00A6BCC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47429722A38C1DC00A6BCC7 /* LaunchScreen.storyboard */; };
 		C47429822A38CAB800A6BCC7 /* MainCoolectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47429812A38CAB800A6BCC7 /* MainCoolectionView.swift */; };
 		C47429842A38D54000A6BCC7 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47429832A38D54000A6BCC7 /* MainCollectionViewCell.swift */; };
+		C47429862A38DDE800A6BCC7 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47429852A38DDE800A6BCC7 /* CardModel.swift */; };
+		C47429882A38DEE000A6BCC7 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47429872A38DEE000A6BCC7 /* GameModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		C47429752A38C1DC00A6BCC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C47429812A38CAB800A6BCC7 /* MainCoolectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoolectionView.swift; sourceTree = "<group>"; };
 		C47429832A38D54000A6BCC7 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		C47429852A38DDE800A6BCC7 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		C47429872A38DEE000A6BCC7 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 		C474297C2A38C83400A6BCC7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C47429852A38DDE800A6BCC7 /* CardModel.swift */,
+				C47429872A38DEE000A6BCC7 /* GameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,6 +199,8 @@
 				C47429842A38D54000A6BCC7 /* MainCollectionViewCell.swift in Sources */,
 				C47429822A38CAB800A6BCC7 /* MainCoolectionView.swift in Sources */,
 				C474296A2A38C1D800A6BCC7 /* SceneDelegate.swift in Sources */,
+				C47429882A38DEE000A6BCC7 /* GameModel.swift in Sources */,
+				C47429862A38DDE800A6BCC7 /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
