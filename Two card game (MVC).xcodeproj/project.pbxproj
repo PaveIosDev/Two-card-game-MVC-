@@ -12,6 +12,8 @@
 		C474296C2A38C1D800A6BCC7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474296B2A38C1D800A6BCC7 /* MainViewController.swift */; };
 		C47429712A38C1DC00A6BCC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47429702A38C1DC00A6BCC7 /* Assets.xcassets */; };
 		C47429742A38C1DC00A6BCC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47429722A38C1DC00A6BCC7 /* LaunchScreen.storyboard */; };
+		C47429822A38CAB800A6BCC7 /* MainCoolectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47429812A38CAB800A6BCC7 /* MainCoolectionView.swift */; };
+		C47429842A38D54000A6BCC7 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47429832A38D54000A6BCC7 /* MainCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C47429702A38C1DC00A6BCC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C47429732A38C1DC00A6BCC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C47429752A38C1DC00A6BCC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C47429812A38CAB800A6BCC7 /* MainCoolectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoolectionView.swift; sourceTree = "<group>"; };
+		C47429832A38D54000A6BCC7 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 		C474297D2A38C84100A6BCC7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C47429802A38CA8D00A6BCC7 /* Cells */,
+				C47429812A38CAB800A6BCC7 /* MainCoolectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -102,6 +108,14 @@
 				C47429672A38C1D800A6BCC7 /* AppDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		C47429802A38CA8D00A6BCC7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C47429832A38D54000A6BCC7 /* MainCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +190,8 @@
 			files = (
 				C474296C2A38C1D800A6BCC7 /* MainViewController.swift in Sources */,
 				C47429682A38C1D800A6BCC7 /* AppDelegate.swift in Sources */,
+				C47429842A38D54000A6BCC7 /* MainCollectionViewCell.swift in Sources */,
+				C47429822A38CAB800A6BCC7 /* MainCoolectionView.swift in Sources */,
 				C474296A2A38C1D800A6BCC7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
