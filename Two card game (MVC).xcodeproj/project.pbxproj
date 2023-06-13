@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		C47429682A38C1D800A6BCC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47429672A38C1D800A6BCC7 /* AppDelegate.swift */; };
 		C474296A2A38C1D800A6BCC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47429692A38C1D800A6BCC7 /* SceneDelegate.swift */; };
-		C474296C2A38C1D800A6BCC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474296B2A38C1D800A6BCC7 /* ViewController.swift */; };
-		C474296F2A38C1D800A6BCC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C474296D2A38C1D800A6BCC7 /* Main.storyboard */; };
+		C474296C2A38C1D800A6BCC7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474296B2A38C1D800A6BCC7 /* MainViewController.swift */; };
 		C47429712A38C1DC00A6BCC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47429702A38C1DC00A6BCC7 /* Assets.xcassets */; };
 		C47429742A38C1DC00A6BCC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47429722A38C1DC00A6BCC7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +18,7 @@
 		C47429642A38C1D800A6BCC7 /* Two card game (MVC).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Two card game (MVC).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47429672A38C1D800A6BCC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C47429692A38C1D800A6BCC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C474296B2A38C1D800A6BCC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C474296E2A38C1D800A6BCC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C474296B2A38C1D800A6BCC7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C47429702A38C1DC00A6BCC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C47429732A38C1DC00A6BCC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C47429752A38C1DC00A6BCC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +54,54 @@
 		C47429662A38C1D800A6BCC7 /* Two card game (MVC) */ = {
 			isa = PBXGroup;
 			children = (
-				C47429672A38C1D800A6BCC7 /* AppDelegate.swift */,
-				C47429692A38C1D800A6BCC7 /* SceneDelegate.swift */,
-				C474296B2A38C1D800A6BCC7 /* ViewController.swift */,
-				C474296D2A38C1D800A6BCC7 /* Main.storyboard */,
+				C474297F2A38C88600A6BCC7 /* Application */,
+				C474297B2A38C81400A6BCC7 /* MainModel */,
 				C47429702A38C1DC00A6BCC7 /* Assets.xcassets */,
 				C47429722A38C1DC00A6BCC7 /* LaunchScreen.storyboard */,
 				C47429752A38C1DC00A6BCC7 /* Info.plist */,
 			);
 			path = "Two card game (MVC)";
+			sourceTree = "<group>";
+		};
+		C474297B2A38C81400A6BCC7 /* MainModel */ = {
+			isa = PBXGroup;
+			children = (
+				C474297C2A38C83400A6BCC7 /* Model */,
+				C474297D2A38C84100A6BCC7 /* View */,
+				C474297E2A38C84A00A6BCC7 /* Controller */,
+			);
+			path = MainModel;
+			sourceTree = "<group>";
+		};
+		C474297C2A38C83400A6BCC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C474297D2A38C84100A6BCC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C474297E2A38C84A00A6BCC7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C474296B2A38C1D800A6BCC7 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C474297F2A38C88600A6BCC7 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C47429692A38C1D800A6BCC7 /* SceneDelegate.swift */,
+				C47429672A38C1D800A6BCC7 /* AppDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +164,6 @@
 			files = (
 				C47429742A38C1DC00A6BCC7 /* LaunchScreen.storyboard in Resources */,
 				C47429712A38C1DC00A6BCC7 /* Assets.xcassets in Resources */,
-				C474296F2A38C1D800A6BCC7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C474296C2A38C1D800A6BCC7 /* ViewController.swift in Sources */,
+				C474296C2A38C1D800A6BCC7 /* MainViewController.swift in Sources */,
 				C47429682A38C1D800A6BCC7 /* AppDelegate.swift in Sources */,
 				C474296A2A38C1D800A6BCC7 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +183,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C474296D2A38C1D800A6BCC7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C474296E2A38C1D800A6BCC7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C47429722A38C1DC00A6BCC7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +322,6 @@
 				INFOPLIST_FILE = "Two card game (MVC)/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,7 +333,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,7 +349,6 @@
 				INFOPLIST_FILE = "Two card game (MVC)/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +360,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
