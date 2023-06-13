@@ -13,6 +13,8 @@ class MainViewController: UIViewController {
     
     private let emojiArray = ["💪", "🏆", "😎", "😈", "💥", "🧡", "👺", "🥰", "😙", "☺️"]
     
+    private lazy var gameModel = GameModel(numberPairCard: collectionView.numberOfItems(inSection: 0) / 2)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,7 +35,17 @@ class MainViewController: UIViewController {
 extension MainViewController: MainCollectionViewProtocol {
     
     func selectItem(indexPath: IndexPath) {
-        print(indexPath)
+
+        gameModel.selectCard(index: indexPath.item)
+        
+        for (index, card) in gameModel.cards.enumerated() {
+            
+            
+            let cell = collectionView.cellForItem(at: [0, index]) as? MainCollectionViewCell
+            cell?.isHidden = card.isMatched
+            cell?.cellFaceUp = card.isFaceUp
+            cell?.emojiLabel.text = card.isFaceUp ? emojiArray[card.identifier] : ""
+        }
     }
 }
 

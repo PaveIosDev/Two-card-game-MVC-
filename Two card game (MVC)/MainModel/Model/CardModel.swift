@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Card {
+struct Card {
     
     var isFaceUp = false
     var isMatched = false

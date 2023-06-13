@@ -20,6 +20,19 @@ class MainCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
+    var cellFaceUp = false {
+        didSet {
+            if self.cellFaceUp {
+                backgroundColor = .black
+            } else {
+                backgroundColor = .white
+                emojiLabel.text = ""
+            }
+        }
+    }
+    
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
